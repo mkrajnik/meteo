@@ -1,0 +1,13 @@
+<template name="postItem">
+  <div class="post shadow-z-2">
+    <div class="post-content">
+      <h3><a href="{{url}}">{{title}}</a><span>{{domain}}</span></h3>
+      <p>
+        Dodał: {{author}},
+        <a href="{{pathFor 'postPage'}}">{{commentsCount}} komentarzy</a>
+        {{#if ownPost}}<a href="{{pathFor 'postEdit'}}">Edytuj <i class ="fa fa-pencil-square-o "></i></a>{{/if}}
+      </p><br>
+       {{postbody}}
+    </div>
+  </div>
+</template>

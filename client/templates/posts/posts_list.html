@@ -1,0 +1,18 @@
+<template name="postsList">
+
+  <div class="posts">
+    {{#each posts}}
+	  <div class="post">
+    <h3><a href="{{pathFor 'postPage'}}">{{title}}</a></h3>
+      <p>
+        {{prettifyDate submitted}}  Dodał: {{author}}, 
+       
+        <a href="{{pathFor 'postPage'}}">komentarzy: {{commentsCount}} </a>
+        {{#if ownPost}}<a href="{{pathFor 'postEdit'}}">Edytuj</a>{{/if}}
+      </p>
+   </div>
+ {{/each}}
+
+   
+  </div>
+</template>
