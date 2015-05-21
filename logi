@@ -1,0 +1,78 @@
+2015-05-21T18:28:42.381663+00:00 heroku[api]: Enable Logplex by mkrajnik94@gmail.com
+2015-05-21T18:28:42.381663+00:00 heroku[api]: Release v2 created by mkrajnik94@gmail.com
+2015-05-21T18:41:54.850068+00:00 heroku[api]: Attach MONGOLAB resource by mkrajnik94@gmail.com
+2015-05-21T18:41:54.850068+00:00 heroku[api]: Release v3 created by mkrajnik94@gmail.com
+2015-05-21T18:45:03.437855+00:00 heroku[api]: Release v4 created by mkrajnik94@gmail.com
+2015-05-21T18:45:03.437855+00:00 heroku[api]: Attach MONGOHQ resource by mkrajnik94@gmail.com
+2015-05-21T18:45:03.673236+00:00 heroku[api]: Scale to web=1 by mkrajnik94@gmail.com
+2015-05-21T18:45:03.722506+00:00 heroku[api]: Deploy c136a4e by mkrajnik94@gmail.com
+2015-05-21T18:45:03.722506+00:00 heroku[api]: Release v5 created by mkrajnik94@gmail.com
+2015-05-21T18:45:05.307508+00:00 heroku[web.1]: Starting process with command `.meteor/heroku_build/bin/node .meteor/heroku_build/app/main.js`
+2015-05-21T18:45:06.657880+00:00 app[web.1]: 
+2015-05-21T18:45:06.658473+00:00 app[web.1]:     throw err;
+2015-05-21T18:45:06.658536+00:00 app[web.1]:           ^
+2015-05-21T18:45:06.660493+00:00 app[web.1]:     at Function.Module._resolveFilename (module.js:338:15)
+2015-05-21T18:45:06.660490+00:00 app[web.1]: Error: Cannot find module 'fibers'
+2015-05-21T18:45:06.658251+00:00 app[web.1]: module.js:340
+2015-05-21T18:45:06.660495+00:00 app[web.1]:     at Function.Module._load (module.js:280:25)
+2015-05-21T18:45:06.660498+00:00 app[web.1]:     at require (module.js:380:17)
+2015-05-21T18:45:06.660496+00:00 app[web.1]:     at Module.require (module.js:364:17)
+2015-05-21T18:45:06.660501+00:00 app[web.1]:     at Module._compile (module.js:456:26)
+2015-05-21T18:45:06.660499+00:00 app[web.1]:     at Object.<anonymous> (/app/.meteor/heroku_build/app/programs/server/boot.js:1:75)
+2015-05-21T18:45:06.660504+00:00 app[web.1]:     at Module.load (module.js:356:32)
+2015-05-21T18:45:06.660503+00:00 app[web.1]:     at Object.Module._extensions..js (module.js:474:10)
+2015-05-21T18:45:06.660506+00:00 app[web.1]:     at Function.Module._load (module.js:312:12)
+2015-05-21T18:45:06.660507+00:00 app[web.1]:     at Module.require (module.js:364:17)
+2015-05-21T18:45:07.351116+00:00 heroku[web.1]: Process exited with status 8
+2015-05-21T18:45:10.019711+00:00 heroku[web.1]: Starting process with command `.meteor/heroku_build/bin/node .meteor/heroku_build/app/main.js`
+2015-05-21T18:45:07.362288+00:00 heroku[web.1]: State changed from starting to crashed
+2015-05-21T18:45:07.362985+00:00 heroku[web.1]: State changed from crashed to starting
+2015-05-21T18:45:12.490248+00:00 app[web.1]: module.js:340
+2015-05-21T18:45:12.471687+00:00 app[web.1]: 
+2015-05-21T18:45:12.490722+00:00 app[web.1]:     throw err;
+2015-05-21T18:45:12.490928+00:00 app[web.1]:           ^
+2015-05-21T18:45:12.493293+00:00 app[web.1]: Error: Cannot find module 'fibers'
+2015-05-21T18:45:12.493298+00:00 app[web.1]:     at Function.Module._load (module.js:280:25)
+2015-05-21T18:45:12.493296+00:00 app[web.1]:     at Function.Module._resolveFilename (module.js:338:15)
+2015-05-21T18:45:12.493300+00:00 app[web.1]:     at require (module.js:380:17)
+2015-05-21T18:45:12.493304+00:00 app[web.1]:     at Module._compile (module.js:456:26)
+2015-05-21T18:45:12.493299+00:00 app[web.1]:     at Module.require (module.js:364:17)
+2015-05-21T18:45:12.493302+00:00 app[web.1]:     at Object.<anonymous> (/app/.meteor/heroku_build/app/programs/server/boot.js:1:75)
+2015-05-21T18:45:12.493305+00:00 app[web.1]:     at Object.Module._extensions..js (module.js:474:10)
+2015-05-21T18:45:12.493306+00:00 app[web.1]:     at Module.load (module.js:356:32)
+2015-05-21T18:45:12.493309+00:00 app[web.1]:     at Module.require (module.js:364:17)
+2015-05-21T18:45:12.493308+00:00 app[web.1]:     at Function.Module._load (module.js:312:12)
+2015-05-21T18:45:13.519244+00:00 heroku[web.1]: Process exited with status 8
+2015-05-21T18:45:13.545669+00:00 heroku[web.1]: State changed from starting to crashed
+2015-05-21T18:46:28.026859+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=mkrajnik.herokuapp.com request_id=d6d204a8-37d7-4680-bb7b-baf9e45569fc fwd="31.7.45.129" dyno= connect= service= status=503 bytes=
+2015-05-21T18:46:28.880808+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=mkrajnik.herokuapp.com request_id=8990637b-ced1-40ec-9544-75c5aece0b27 fwd="31.7.45.129" dyno= connect= service= status=503 bytes=
+2015-05-21T18:46:29.031732+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=mkrajnik.herokuapp.com request_id=f615c994-8f0e-479e-9094-9ae7b2b71ff1 fwd="31.7.45.129" dyno= connect= service= status=503 bytes=
+2015-05-21T18:46:31.804473+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=mkrajnik.herokuapp.com request_id=c499178a-a79f-423a-9fa7-aafa267340bb fwd="31.7.45.129" dyno= connect= service= status=503 bytes=
+2015-05-21T18:46:43.669817+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=mkrajnik.herokuapp.com request_id=2dff43dd-74e0-48a3-9870-ac9a58d5bd2e fwd="31.7.45.129" dyno= connect= service= status=503 bytes=
+2015-05-21T18:46:43.864604+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/favicon.ico" host=mkrajnik.herokuapp.com request_id=46bd3c07-d270-4956-99c6-5fb467eecc53 fwd="31.7.45.129" dyno= connect= service= status=503 bytes=
+2015-05-21T18:46:42.381932+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=mkrajnik.herokuapp.com request_id=087da57b-90c5-441e-9e91-3891507a780c fwd="31.7.45.129" dyno= connect= service= status=503 bytes=
+2015-05-21T18:47:50.977618+00:00 heroku[api]: Detach MONGOHQ (@ref:cooking-stably-5636) by mkrajnik94@gmail.com
+2015-05-21T18:47:50.977618+00:00 heroku[api]: Release v6 created by mkrajnik94@gmail.com
+2015-05-21T18:47:51.065346+00:00 heroku[api]: Remove mongohq:ssd_1g_elastic add-on by mkrajnik94@gmail.com
+2015-05-21T18:47:51.065346+00:00 heroku[api]: Release v7 created by mkrajnik94@gmail.com
+2015-05-21T18:47:51.194118+00:00 heroku[web.1]: State changed from crashed to starting
+2015-05-21T18:47:53.516781+00:00 heroku[web.1]: Starting process with command `.meteor/heroku_build/bin/node .meteor/heroku_build/app/main.js`
+2015-05-21T18:47:56.199468+00:00 app[web.1]: module.js:340
+2015-05-21T18:47:56.199110+00:00 app[web.1]: 
+2015-05-21T18:47:56.199779+00:00 app[web.1]:     throw err;
+2015-05-21T18:47:56.199793+00:00 app[web.1]:           ^
+2015-05-21T18:47:56.201927+00:00 app[web.1]: Error: Cannot find module 'fibers'
+2015-05-21T18:47:56.201930+00:00 app[web.1]:     at Function.Module._resolveFilename (module.js:338:15)
+2015-05-21T18:47:56.201932+00:00 app[web.1]:     at Function.Module._load (module.js:280:25)
+2015-05-21T18:47:56.201934+00:00 app[web.1]:     at Module.require (module.js:364:17)
+2015-05-21T18:47:56.201936+00:00 app[web.1]:     at require (module.js:380:17)
+2015-05-21T18:47:56.201938+00:00 app[web.1]:     at Object.<anonymous> (/app/.meteor/heroku_build/app/programs/server/boot.js:1:75)
+2015-05-21T18:47:56.201940+00:00 app[web.1]:     at Module._compile (module.js:456:26)
+2015-05-21T18:47:56.201942+00:00 app[web.1]:     at Object.Module._extensions..js (module.js:474:10)
+2015-05-21T18:47:56.201945+00:00 app[web.1]:     at Module.load (module.js:356:32)
+2015-05-21T18:47:56.201947+00:00 app[web.1]:     at Function.Module._load (module.js:312:12)
+2015-05-21T18:47:56.201949+00:00 app[web.1]:     at Module.require (module.js:364:17)
+2015-05-21T18:47:57.200416+00:00 heroku[web.1]: State changed from starting to crashed
+2015-05-21T18:47:57.187985+00:00 heroku[web.1]: Process exited with status 8
+2015-05-21T18:48:06.200947+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=mkrajnik.herokuapp.com request_id=c859ba77-e177-450e-ab31-885dfa62b6a7 fwd="31.7.45.129" dyno= connect= service= status=503 bytes=
+2015-05-21T18:48:31.742577+00:00 heroku[router]: at=error code=H10 desc="App crashed" method=GET path="/" host=mkrajnik.herokuapp.com request_id=bd5ec381-abec-49b3-b200-0f82410b2ed7 fwd="31.7.45.129" dyno= connect= service= status=503 bytes=

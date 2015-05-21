@@ -1,0 +1,176 @@
+<template name="glowna">
+    <style>
+  /* wygląd elementu - ul */
+      .ul2 {
+        list-style-type:none;
+        margin:0;
+        padding:0;
+        border:1px solid #CCC;
+        width:250px;
+        box-shadow:0 6px 6px -6px #666;
+      }
+
+      /* wygląd elementów - li */
+      .li2 {
+        border-top:1px solid #CCC;
+        background-color:#00e676;
+        background-repeat:repeat-x;
+        background-image:url('http://kodcss.pl/img/tooltip.png');
+        background-image:radial-gradient(ellipse at bottom, #FFF 0%, #00e676 100%);
+      }
+
+      /* wygląd pierwszego elementu - li */
+      .li2:first-child {
+        border-top:none;
+      }
+
+      /* wygląd elementu - li - po najechaniu na niego kursorem myszki */
+      .li2:hover {
+        background:#FFF;
+      }
+
+      /* wygląd elementów - a */
+      .a2 {
+        display:block;
+        text-decoration:none;
+        padding:10px;
+        text-align:center;
+        color: white;
+        text-shadow:1px 1px 0 #FFF, 1px 2px 0 #AAA, 1px 2px 6px #AAA;
+        font-size:18px;
+        border:1px solid #FFF;
+        background-repeat:no-repeat;
+        background-position:center;
+        transition:1s;
+      }
+
+      /* wygląd elementu - a - w momencie najechania na niego kursorem myszki */
+      .a2:hover {
+        color: black;
+        background-image:url('http://kodcss.pl/img/strzalka.png');
+        background-position:97% center;
+      }
+
+
+
+      #rodzic {
+        width: 320px;
+        height:46px;
+        font-size:24px;
+        margin:0 auto;
+        text-align:center;
+      }
+
+      #rodzic > span {
+        display:block;
+        float:left;
+        width:40px;
+        line-height:40px;
+        margin:0 5px;
+        border:3px solid #00e676;
+        background-color: white;
+	box-shadow: 5px 0px 10px #e0e0e0;
+
+        border-radius:6px;
+        animation:animowany_tekst 5s linear ;
+        -webkit-animation:animowany_tekst 5s linear ; /* dla Google Chrome, Safari, Opera 15+ */
+      }
+
+      #rodzic > span:nth-child(1) {
+        animation-delay:250ms;
+        -webkit-animation-delay:250ms;
+      }
+
+      #rodzic > span:nth-child(2) {
+        animation-delay:500ms;
+        -webkit-animation-delay:500ms;
+      }
+
+      #rodzic > span:nth-child(3) {
+        animation-delay:750ms;
+        -webkit-animation-delay:750ms;
+      }
+
+      #rodzic > span:nth-child(4) {
+        animation-delay:1000ms;
+        -webkit-animation-delay:1000ms;
+      }
+
+      #rodzic > span:nth-child(5) {
+        animation-delay:1250ms;
+        -webkit-animation-delay:1250ms;
+      }
+
+      #rodzic > span:nth-child(6) {
+        animation-delay:1500ms;
+        -webkit-animation-delay:1500ms;
+      }
+
+
+      /*------------------------ANIMACJA------------------------*/
+      @keyframes animowany_tekst
+      {
+        0% {transform:rotate(0);}
+        10% {transform:rotate(360deg);}
+        100% {transform:rotate(360deg);}
+      }
+
+      @-webkit-keyframes animowany_tekst /* dla Google Chrome, Safari, Opera 15+ */
+      {
+        0% {-webkit-transform:rotate(0);}
+        10% {-webkit-transform:rotate(360deg);}
+        100% {-webkit-transform:rotate(360deg);}
+      }
+@keyframes mignij
+{
+  0% { opacity:0; }
+  100% { opacity:1; }
+}
+
+ul2 li2:hover a span {
+  animation:mignij 2s linear;
+}
+
+
+
+    </style>
+
+<body>
+<div class="post shadow-z-2">
+   <ul class="ul2">
+      <li class="li2">
+        <a class = "a2" href="/posts">
+          <span>Posty</span>
+        </a>
+      </li>
+
+</ul>
+
+
+  <div class = "text-center" id="rodzic">
+    <span>W</span><span>I</span><span>T</span><span>A</span><span>J</span><span>!</span>
+	 </div>
+<br><h2 class = "text-center"> Na mojej stronie znajdziesz wiele ciekawych postów.<br> Możesz pisać, komentować i dostaniesz o tym powiadomienie!<br> 
+Strona ma wiele zalet, jest m.in: </h2><br>
+
+<div class="container2  shadow-z-1">
+<div class="row">
+  <div class="col-md-4">
+	<h4 class = "text-center"> <i class ="fa fa-bolt"></i><br> Reaktywna </h4>
+	
+  </div>
+  <div class="col-md-4">
+       <h4 class = "text-center"> <i class ="fa fa-desktop"></i><br> Responsywna </h4>
+</div>
+  <div class="col-md-4">
+       <h4 class = "text-center"> <i class ="fa fa-bomb"></i><br> Szybka </h4>
+
+</div>
+</div>
+ </div>
+
+
+ </div>
+</body>
+
+</template>

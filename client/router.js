@@ -8,11 +8,11 @@ Router.configure({
 
 Router.map(function() {
 
- this.route('postsList', {
+ this.route('glowna', {
     path: '/'
   });
- this.route('glowna', {
-    path: '/glowna'
+ this.route('postsList', {
+    path: '/posts'
   });
 
   this.route('postPage', {
